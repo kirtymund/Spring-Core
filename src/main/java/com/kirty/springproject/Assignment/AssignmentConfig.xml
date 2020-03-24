@@ -1,0 +1,10 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean name = "items" class = "com.kirty.springproject.Assignment.Items" p:id ="1" p:name ="clothes" p:price ="2020.20" p:quantity="4"></bean>
+	<bean name = "shoppingcart" class = "com.kirty.springproject.Assignment.ShoppingCart" p:item-ref = "items"></bean>
+
+</beans>
